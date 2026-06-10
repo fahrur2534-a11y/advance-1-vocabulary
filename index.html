@@ -1,128 +1,303 @@
+```html
 
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About My Family - Writing Exercise</title>
+<title>Advanced Vocabulary Task - Globalization</title>
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background:#f4f6f9;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 30px;
+        line-height: 1.6;
+    }
 
-.container{
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
-}
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
 
-h1,h2{
-    color:#2c3e50;
-}
+    h1 {
+        text-align: center;
+        color: #2c3e50;
+    }
 
-textarea{
-    width:100%;
-    min-height:120px;
-    padding:10px;
-    margin-top:10px;
-}
+    h2 {
+        color: #34495e;
+        margin-top: 30px;
+    }
 
-input{
-    padding:8px;
-    margin:5px;
-}
+    .vocab-box {
+        background: #eef5ff;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
 
-button{
-    background:#3498db;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:5px;
-    cursor:pointer;
-}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
 
-button:hover{
-    background:#2980b9;
-}
+    table, th, td {
+        border: 1px solid #ccc;
+    }
 
-.correct{
-    color:green;
-    font-weight:bold;
-}
+    th, td {
+        padding: 10px;
+    }
 
-.wrong{
-    color:red;
-    font-weight:bold;
-}
+    select,
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    textarea {
+        min-height: 80px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        background: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #2980b9;
+    }
+
+    #result {
+        margin-top: 25px;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+
+    .success {
+        color: green;
+        font-weight: bold;
+    }
+
+    .warning {
+        color: red;
+        font-weight: bold;
+    }
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-<hr>
+<h1>ADVANCED VOCABULARY TASK</h1>
 
-<h2>Part A: Fill in the blanks</h2>
+<h2>Topic: Globalization</h2>
 
-<p>1. Kelly lives in
-<input id="q1"></p>
+<p><strong>Instructions:</strong> Read the text below and complete the tasks that follow.</p>
 
-<p>2. Kelly's mother's name is
-<input id="q2"></p>
+<h3>Globalization in the Modern World</h3>
 
-<p>3. Kelly's father works in a
-<input id="q3"></p>
+<p>
+Globalization refers to the increasing connection and interaction among countries through trade, technology, communication, and cultural exchange. It has created many opportunities for economic growth and international cooperation. Businesses can expand their markets, and people can access information from different parts of the world more easily than ever before.
+</p>
 
-<p>4. Kelly's sister loves listening to
-<input id="q4"></p>
+<p>
+However, globalization also presents challenges. Some people argue that it can increase economic inequality, threaten local cultures, and create intense competition in the job market. Others believe that globalization promotes innovation, understanding between nations, and the sharing of knowledge. As the world becomes more interconnected, it is important for individuals to understand both the benefits and drawbacks of globalization.
+</p>
 
-<p>5. Brandy is a pet
-<input id="q5"></p>
+<div class="vocab-box">
+<strong>Vocabulary List:</strong><br><br>
+globalization • cooperation • expand • inequality • innovation • interconnected • opportunities • drawbacks
+</div>
 
-<button onclick="checkAnswers()">Check Answers</button>
+<h2>Task A: Match the Words with Their Meanings</h2>
 
-<p id="result"></p>
+<table>
+<tr>
+<th>Word</th>
+<th>Answer</th>
+</tr>
 
-<hr>
+<tr><td>1. globalization</td><td><input type="text" id="a1"></td></tr>
+<tr><td>2. cooperation</td><td><input type="text" id="a2"></td></tr>
+<tr><td>3. expand</td><td><input type="text" id="a3"></td></tr>
+<tr><td>4. inequality</td><td><input type="text" id="a4"></td></tr>
+<tr><td>5. innovation</td><td><input type="text" id="a5"></td></tr>
+<tr><td>6. interconnected</td><td><input type="text" id="a6"></td></tr>
+<tr><td>7. opportunities</td><td><input type="text" id="a7"></td></tr>
+<tr><td>8. drawbacks</td><td><input type="text" id="a8"></td></tr>
+</table>
 
-<h2>Part B: Write About Your Family</h2>
+<p><strong>Meanings:</strong></p>
+<p>
+a. New ideas, methods, or inventions<br>
+b. Disadvantages or negative aspects<br>
+c. The process of increasing connections among countries<br>
+d. To become larger or more extensive<br>
+e. Situations that make it possible to do something<br>
+f. The condition of not being equal<br>
+g. Working together to achieve a common goal<br>
+h. Connected with one another
+</p>
 
-<p>Write 5–8 sentences about your family.</p>
+<h2>Task B: Complete the Sentences</h2>
 
-<textarea placeholder="My name is..."></textarea>
+<p>1. Modern technology has made the world more <input type="text" id="b1">.</p>
+
+<p>2. International <input type="text" id="b2"> is necessary to solve global problems.</p>
+
+<p>3. Many companies plan to <input type="text" id="b3"> their businesses overseas.</p>
+
+<p>4. Technological <input type="text" id="b4"> has changed the way people communicate.</p>
+
+<p>5. Economic <input type="text" id="b5"> remains a serious issue in many countries.</p>
+
+<h2>Task C: Choose the Correct Answer</h2>
+
+<p>
+1. Which of the following is an example of globalization?
+<select id="c1">
+<option value="">Select</option>
+<option value="a">A student studying only local history</option>
+<option value="b">A company selling products in different countries</option>
+<option value="c">A family eating dinner together</option>
+<option value="d">A teacher giving homework</option>
+</select>
+</p>
+
+<p>
+2. The word <em>drawbacks</em> is closest in meaning to:
+<select id="c2">
+<option value="">Select</option>
+<option value="a">Benefits</option>
+<option value="b">Advantages</option>
+<option value="c">Challenges</option>
+<option value="d">Achievements</option>
+</select>
+</p>
+
+<p>
+3. If countries show cooperation, they:
+<select id="c3">
+<option value="">Select</option>
+<option value="a">Compete aggressively</option>
+<option value="b">Avoid communication</option>
+<option value="c">Work together toward shared goals</option>
+<option value="d">Limit international trade</option>
+</select>
+</p>
+
+<h2>Task D: Vocabulary in Context</h2>
+
+<p>1. What is one opportunity created by globalization?</p>
+<textarea placeholder="Write your answer here..."></textarea>
+
+<p>2. What is one drawback of globalization?</p>
+<textarea placeholder="Write your answer here..."></textarea>
+
+<p>3. Why is international cooperation important today?</p>
+<textarea placeholder="Write your answer here..."></textarea>
+
+<h2>Task E: Sentence Writing</h2>
+
+<p>Write one original sentence for each word.</p>
+
+<p>1. Globalization</p>
+<textarea></textarea>
+
+<p>2. Innovation</p>
+<textarea></textarea>
+
+<p>3. Opportunities</p>
+<textarea></textarea>
+
+<p>4. Interconnected</p>
+<textarea></textarea>
+
+<button onclick="checkAnswers()">Check Answers (Tasks A–C)</button>
+
+<div id="result"></div>
 
 </div>
 
 <script>
-function checkAnswers(){
 
-let score = 0;
+function checkAnswers() {
 
-const answers = {
-q1:"california",
-q2:"carmen",
-q3:"bank",
-q4:"music",
-q5:"dog"
-};
+    const answers = {
+        a1: "c",
+        a2: "g",
+        a3: "d",
+        a4: "f",
+        a5: "a",
+        a6: "h",
+        a7: "e",
+        a8: "b",
 
-for(let id in answers){
-let user = document.getElementById(id).value.trim().toLowerCase();
+        b1: "interconnected",
+        b2: "cooperation",
+        b3: "expand",
+        b4: "innovation",
+        b5: "inequality",
 
-if(user === answers[id]){
-score++;
+        c1: "b",
+        c2: "c",
+        c3: "c"
+    };
+
+    let score = 0;
+    const total = Object.keys(answers).length;
+
+    for (let key in answers) {
+
+        let response = document.getElementById(key).value
+            .trim()
+            .toLowerCase();
+
+        if (response === answers[key]) {
+            score++;
+        }
+    }
+
+    const percentage = Math.round((score / total) * 100);
+
+    let message = "";
+
+    if (percentage >= 80) {
+        message = "<p class='success'>Excellent understanding of academic vocabulary!</p>";
+    } else if (percentage >= 60) {
+        message = "<p class='success'>Good job! Continue expanding your vocabulary.</p>";
+    } else {
+        message = "<p class='warning'>Keep practicing. Review the vocabulary list and try again.</p>";
+    }
+
+    document.getElementById("result").innerHTML =
+        "<h2>Your Result</h2>" +
+        "<p><strong>Score:</strong> " + score + " / " + total + "</p>" +
+        "<p><strong>Percentage:</strong> " + percentage + "%</p>" +
+        message +
+        "<p><em>Tasks D and E should be reviewed by the teacher for content, vocabulary use, and grammatical accuracy.</em></p>";
 }
-}
 
-document.getElementById("result").innerHTML =
-"You got " + score + " out of 5 correct!";
-}
 </script>
 
 </body>
 </html>
+```
